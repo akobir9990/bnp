@@ -1,28 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-
 import HomePage from "../pages/homePage";
 import Author from "../pages/author";
 import About from "../pages/about";
 
-import Tutorial from "../pages/tutorial";
-import TestAPage from "../pages/tests";
-
-import Lecture from "../pages/lecture/index";
-
-import LectureOne from "../pages/lecture/pages/1";
-import LectureTwo from "../pages/lecture/pages/2";
-import LectureThree from "../pages/lecture/pages/3";
-import LectureFour from "../pages/lecture/pages/4";
-import LectureFive from "../pages/lecture/pages/5";
-import LectureSix from "../pages/lecture/pages/6";
-import LectureSeven from "../pages/lecture/pages/7";
-import LectureEight from "../pages/lecture/pages/8";
-import LectureNine from "../pages/lecture/pages/9";
-import LectureTen from "../pages/lecture/pages/10";
-import LectureThirteen from "../pages/lecture/pages/13";
-import LectureSixteen from "../pages/lecture/pages/16";
 import Presentation from "../pages/presentation";
-
 import PresentationOne from "../pages/presentation/pages/1";
 import PresentationTwo from "../pages/presentation/pages/2";
 import PresentationThree from "../pages/presentation/pages/3";
@@ -39,6 +20,21 @@ import PresentationThreeteen from "../pages/presentation/pages/13";
 import PresentationFourteen from "../pages/presentation/pages/14";
 import PresentationFifteen from "../pages/presentation/pages/15";
 import PresentationSixteen from "../pages/presentation/pages/16";
+
+import Lecture from "../pages/lecture/index";
+
+import LectureOne from "../pages/lecture/pages/1";
+import LectureTwo from "../pages/lecture/pages/2";
+import LectureThree from "../pages/lecture/pages/3";
+import LectureFour from "../pages/lecture/pages/4";
+import LectureFive from "../pages/lecture/pages/5";
+import LectureSix from "../pages/lecture/pages/6";
+import LectureSeven from "../pages/lecture/pages/7";
+import LectureEight from "../pages/lecture/pages/8";
+import LectureNine from "../pages/lecture/pages/9";
+import LectureTen from "../pages/lecture/pages/10";
+import LectureThirteen from "../pages/lecture/pages/13";
+import LectureSixteen from "../pages/lecture/pages/16";
 
 import Practice from "../pages/practice/index";
 
@@ -59,7 +55,6 @@ import PracticeFourteen from "../pages/practice/pages/14";
 import PracticeFifteen from "../pages/practice/pages/15";
 import PracticeSixteen from "../pages/practice/pages/16";
 
-import "./const";
 import {
   ABOUT_PAGE,
   AUTHOR_PAGE,
@@ -67,8 +62,6 @@ import {
   LECTURE_PAGE,
   PRACTICE_PAGE,
   PRESENTATION_PAGE,
-  TEST_PAGE,
-  TUTORIAL_PAGE,
 } from "./const";
 
 function router() {
@@ -76,10 +69,8 @@ function router() {
     <div>
       <Routes>
         <Route path={HOME_PAGE} element={<HomePage />} />
-        <Route path={TUTORIAL_PAGE} element={<Tutorial />} />
         <Route path={AUTHOR_PAGE} element={<Author />} />
         <Route path={ABOUT_PAGE} element={<About />} />
-
         <Route path={PRESENTATION_PAGE}>
           <Route path="" element={<Presentation />} />
           <Route path="1" element={<PresentationOne />} />
@@ -114,7 +105,6 @@ function router() {
           <Route path="13" element={<LectureThirteen />} />
           <Route path="16" element={<LectureSixteen />} />
         </Route>
-
         <Route path={PRACTICE_PAGE}>
           <Route path="" element={<Practice />} />
           <Route path="1" element={<PracticeOne />} />
@@ -134,17 +124,6 @@ function router() {
           <Route path="15" element={<PracticeFifteen />} />
           <Route path="16" element={<PracticeSixteen />} />
         </Route>
-        <Route path={TEST_PAGE} element={<TestAPage />} />
-        <Route
-          path="*"
-          element={
-            <div className=" w-[100%] h-[100vh] flex items-center justify-center">
-              <h1 className="text-center text-[50px] text-[#ed7171] uppercase ">
-                вы ошиблись адресом У нас нет такой страницы
-              </h1>
-            </div>
-          }
-        />
       </Routes>
     </div>
   );

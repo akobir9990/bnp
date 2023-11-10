@@ -11,22 +11,20 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-
-import Router from "../../router/router";
+import AccountBalanceIcon from "@mui/icons-material/Adb";
 import developer from "../../assets/images/developer-icon.png";
+import Router from "../../routes/Router.jsx";
 
-import { NavLink } from "react-router-dom";
-import "../../router/const";
 import {
-  ABOUT_PAGE,
-  AUTHOR_PAGE,
-  PRACTICE_PAGE,
-  PRESENTATION_PAGE,
   LECTURE_PAGE,
+  PRESENTATION_PAGE,
+  PRACTICE_PAGE,
   TEST_PAGE,
+  AUTHOR_PAGE,
+  ABOUT_PAGE,
   HOME_PAGE,
-} from "../../router/const";
+} from "../../routes/const";
+import { NavLink } from "react-router-dom";
 
 const pages = [
   { id: 1, name: "Лекции", path: LECTURE_PAGE },
@@ -38,6 +36,7 @@ const settings = [
   { id: 1, name: "Об авторе", path: AUTHOR_PAGE },
   { id: 2, name: "О программе", path: ABOUT_PAGE },
 ];
+const nameOfScinece = "УГФ";
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -57,7 +56,6 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  const nameOfScinece = "УГФ";
 
   return (
     <div>

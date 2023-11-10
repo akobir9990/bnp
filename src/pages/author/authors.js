@@ -1,5 +1,5 @@
 import nargiza from "../../assets/images/authors/nargiza.jpeg";
-import xusan from "../../assets/images/authors/xusan.JPG";
+import xusan from "../../assets/images/authors/xusan.jpeg";
 
 export const authors = [
   {
