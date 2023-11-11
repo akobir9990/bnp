@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/homePage";
 import Author from "../pages/author";
 import About from "../pages/about";
+import Test from "../pages/tests";
 
 import Presentation from "../pages/presentation";
 import PresentationOne from "../pages/presentation/pages/1";
@@ -62,6 +63,7 @@ import {
   LECTURE_PAGE,
   PRACTICE_PAGE,
   PRESENTATION_PAGE,
+  TEST_PAGE,
 } from "./const";
 
 function router() {
@@ -71,6 +73,7 @@ function router() {
         <Route path={HOME_PAGE} element={<HomePage />} />
         <Route path={AUTHOR_PAGE} element={<Author />} />
         <Route path={ABOUT_PAGE} element={<About />} />
+        <Route path={TEST_PAGE} element={<Test />} />
         <Route path={PRESENTATION_PAGE}>
           <Route path="" element={<Presentation />} />
           <Route path="1" element={<PresentationOne />} />

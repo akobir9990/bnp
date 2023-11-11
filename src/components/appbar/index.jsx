@@ -207,9 +207,9 @@ function ResponsiveAppBar() {
           </Toolbar>
         </Container>
       </AppBar>
-      <Container className="py-20">
+      <div className="py-20">
         <Router />
-      </Container>
+      </div>
     </div>
   );
 }
