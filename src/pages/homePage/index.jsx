@@ -4,8 +4,8 @@ import "./style.css";
 function HomePage() {
   return (
     <Container className="text-white">
-      <Box className="flex justify-center items-center text-center">
-        <Box className="backdrop-blur-sm bg-white/30 px-[50px] max-w-2xl h-[100vh] bg-scroll flex flex-col justify-center items-center text-center border-[solid] rounded-md border-[white] border-[3px]">
+      <Box className="flex justify-center items-center text-center p-0">
+        <Box className="backdrop-blur-sm bg-white/30 p-[5px] md:py-[10px] md:px-[50px] max-w-2xl h-[100vh] bg-scroll flex flex-col justify-center items-center text-center border-[solid] rounded-md border-[white] border-[3px]">
           <h1>
             МИНИСТЕРСТВО ВЫСШЕГО ОБРАЗОВАНИЯ, НАУКИ И ИННОВАЦИЙ РЕСПУБЛИКИ
             УЗБЕКИСТАН
