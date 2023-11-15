@@ -1,4 +1,5 @@
 import * as React from "react";
+import Router from "../../routes/Router";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -13,7 +14,6 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AccountBalanceIcon from "@mui/icons-material/Adb";
 import developer from "../../assets/images/developer-icon.png";
-import Router from "../../routes/Router.jsx";
 
 import {
   LECTURE_PAGE,
@@ -23,14 +23,16 @@ import {
   AUTHOR_PAGE,
   ABOUT_PAGE,
   HOME_PAGE,
+  VIDEOS_PAGE,
 } from "../../routes/const";
 import { NavLink } from "react-router-dom";
 
 const pages = [
   { id: 1, name: "Лекции", path: LECTURE_PAGE },
   { id: 2, name: "Презентации", path: PRESENTATION_PAGE },
-  { id: 3, name: "Практики", path: PRACTICE_PAGE },
-  { id: 4, name: "Тесты", path: TEST_PAGE },
+  { id: 3, name: "Практические задания", path: PRACTICE_PAGE },
+  { id: 4, name: "Тесты для проверки знания", path: TEST_PAGE },
+  { id: 4, name: "Видео", path: VIDEOS_PAGE },
 ];
 const settings = [
   { id: 1, name: "Об авторе", path: AUTHOR_PAGE },

@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/homePage";
 import Author from "../pages/author";
 import About from "../pages/about";
+import Videos from "../pages/videos";
 import Test from "../pages/tests";
 
 import Presentation from "../pages/presentation";
@@ -64,6 +65,7 @@ import {
   PRACTICE_PAGE,
   PRESENTATION_PAGE,
   TEST_PAGE,
+  VIDEOS_PAGE,
 } from "./const";
 
 function router() {
@@ -74,6 +76,7 @@ function router() {
         <Route path={AUTHOR_PAGE} element={<Author />} />
         <Route path={ABOUT_PAGE} element={<About />} />
         <Route path={TEST_PAGE} element={<Test />} />
+        <Route path={VIDEOS_PAGE} element={<Videos />} />
         <Route path={PRESENTATION_PAGE}>
           <Route path="" element={<Presentation />} />
           <Route path="1" element={<PresentationOne />} />
