@@ -13,15 +13,15 @@ import PresentationFour from "../pages/presentation/pages/4";
 import PresentationFive from "../pages/presentation/pages/5";
 import PresentationSix from "../pages/presentation/pages/6";
 import PresentationSeven from "../pages/presentation/pages/7";
-import PresentationEight from "../pages/presentation/pages/8";
-import PresentationNine from "../pages/presentation/pages/9";
-import PresentationTen from "../pages/presentation/pages/10";
-import PresentationEleven from "../pages/presentation/pages/11";
-import PresentationTwelve from "../pages/presentation/pages/12";
-import PresentationThreeteen from "../pages/presentation/pages/13";
-import PresentationFourteen from "../pages/presentation/pages/14";
-import PresentationFifteen from "../pages/presentation/pages/15";
-import PresentationSixteen from "../pages/presentation/pages/16";
+// import PresentationEight from "../pages/presentation/pages/8";
+// import PresentationNine from "../pages/presentation/pages/9";
+// import PresentationTen from "../pages/presentation/pages/10";
+// import PresentationEleven from "../pages/presentation/pages/11";
+// import PresentationTwelve from "../pages/presentation/pages/12";
+// import PresentationThreeteen from "../pages/presentation/pages/13";
+// import PresentationFourteen from "../pages/presentation/pages/14";
+// import PresentationFifteen from "../pages/presentation/pages/15";
+// import PresentationSixteen from "../pages/presentation/pages/16";
 
 import Lecture from "../pages/lecture/index";
 
@@ -34,9 +34,9 @@ import LectureSix from "../pages/lecture/pages/6";
 import LectureSeven from "../pages/lecture/pages/7";
 import LectureEight from "../pages/lecture/pages/8";
 import LectureNine from "../pages/lecture/pages/9";
-import LectureTen from "../pages/lecture/pages/10";
-import LectureThirteen from "../pages/lecture/pages/13";
-import LectureSixteen from "../pages/lecture/pages/16";
+// import LectureTen from "../pages/lecture/pages/10";
+// import LectureThirteen from "../pages/lecture/pages/13";
+// import LectureSixteen from "../pages/lecture/pages/16";
 
 import Practice from "../pages/practice/index";
 
@@ -86,7 +86,7 @@ function router() {
           <Route path="5" element={<PresentationFive />} />
           <Route path="6" element={<PresentationSix />} />
           <Route path="7" element={<PresentationSeven />} />
-          <Route path="8" element={<PresentationEight />} />
+          {/* <Route path="8" element={<PresentationEight />} />
           <Route path="9" element={<PresentationNine />} />
           <Route path="10" element={<PresentationTen />} />
           <Route path="11" element={<PresentationEleven />} />
@@ -94,7 +94,7 @@ function router() {
           <Route path="13" element={<PresentationThreeteen />} />
           <Route path="14" element={<PresentationFourteen />} />
           <Route path="15" element={<PresentationFifteen />} />
-          <Route path="16" element={<PresentationSixteen />} />
+          <Route path="16" element={<PresentationSixteen />} /> */}
         </Route>
         <Route path={LECTURE_PAGE}>
           <Route path="" element={<Lecture />} />
@@ -107,9 +107,9 @@ function router() {
           <Route path="7" element={<LectureSeven />} />
           <Route path="8" element={<LectureEight />} />
           <Route path="9" element={<LectureNine />} />
-          <Route path="10" element={<LectureTen />} />
+          {/* <Route path="10" element={<LectureTen />} />
           <Route path="13" element={<LectureThirteen />} />
-          <Route path="16" element={<LectureSixteen />} />
+          <Route path="16" element={<LectureSixteen />} /> */}
         </Route>
         <Route path={PRACTICE_PAGE}>
           <Route path="" element={<Practice />} />
