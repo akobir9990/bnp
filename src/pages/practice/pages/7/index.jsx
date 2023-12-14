@@ -1,6 +1,9 @@
 import { useState } from "react";
 
 import one from "./img/1.jpeg";
+import two from "./img/2.jpeg";
+import three from "./img/3.jpeg";
+import four from "./img/4.jpeg";
 
 import "./style.css";
 
@@ -12,7 +15,12 @@ function One() {
   const [goBack, setGoBack] = useState(false);
   const path = "https://t.me/tashkentInstituteOfFinance/76";
 
-  const items = [{ id: 1, name: one }];
+  const items = [
+    { id: 1, name: one },
+    { id: 2, name: two },
+    { id: 3, name: three },
+    { id: 4, name: four },
+  ];
   return (
     <Container sx={{ width: "100%" }}>
       <Box
