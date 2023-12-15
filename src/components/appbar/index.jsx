@@ -12,7 +12,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AccountBalanceIcon from "@mui/icons-material/Adb";
+import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
 import developer from "../../assets/images/developer-icon.png";
 
 import {
@@ -23,7 +23,7 @@ import {
   AUTHOR_PAGE,
   ABOUT_PAGE,
   HOME_PAGE,
-  VIDEOS_PAGE,
+  // VIDEOS_PAGE,
 } from "../../routes/const";
 import { NavLink } from "react-router-dom";
 
@@ -32,13 +32,13 @@ const pages = [
   { id: 2, name: "Презентации", path: PRESENTATION_PAGE },
   { id: 3, name: "Практические задания", path: PRACTICE_PAGE },
   { id: 4, name: "Тесты для проверки знания", path: TEST_PAGE },
-  { id: 4, name: "Видео", path: VIDEOS_PAGE },
+  // { id: 4, name: "Видео", path: VIDEOS_PAGE },
 ];
 const settings = [
   { id: 1, name: "Об авторе", path: AUTHOR_PAGE },
   { id: 2, name: "О программе", path: ABOUT_PAGE },
 ];
-const nameOfScinece = "УГФ";
+const nameOfScinece = "БНП";
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -65,7 +65,7 @@ function ResponsiveAppBar() {
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <NavLink to={HOME_PAGE} className="flex items-center gap-1">
-              <AccountBalanceIcon
+              <CurrencyExchangeIcon
                 sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
               />
               <Typography
@@ -114,7 +114,7 @@ function ResponsiveAppBar() {
                 }}
               >
                 {pages.map((page) => (
-                  <NavLink sx={{}} to={page.path} key={page.id}>
+                  <NavLink to={page.path} key={page.id}>
                     <MenuItem onClick={handleCloseNavMenu}>
                       <Typography
                         sx={{
@@ -129,7 +129,8 @@ function ResponsiveAppBar() {
                 ))}
               </Menu>
             </Box>
-            <AccountBalanceIcon
+
+            <CurrencyExchangeIcon
               sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
             />
             <Typography
@@ -150,7 +151,12 @@ function ResponsiveAppBar() {
             >
               {nameOfScinece}
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+              }}
+            >
               {pages.map((page) => (
                 <NavLink to={page.path} key={page.id}>
                   <Button
@@ -170,7 +176,7 @@ function ResponsiveAppBar() {
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar className="bg-white" src={developer} />
+                  <Avatar className="bg-white " src={developer} />
                 </IconButton>
               </Tooltip>
               <Menu

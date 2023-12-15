@@ -42,7 +42,7 @@ function One() {
             </Button>
           </NavLink>
         ) : (
-          <NavLink to="/presentation">
+          <NavLink to="/practice">
             <Button onMouseLeave={() => setGoBack(!goBack)} variant="contained">
               ortga
             </Button>

@@ -58,6 +58,7 @@ export default function BasicCard() {
         "Виды налоговых льгот, предоставленных хозяйствующим субъектам",
     },
   ];
+
   return (
     <Box sx={{ minWidth: 275 }}>
       <h1 className="text-center text-[50px] text-white font-bold">

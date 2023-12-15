@@ -1,7 +1,10 @@
 import { Box, Container } from "@mui/material";
-import titul from "../../assets/titul.jpeg";
+import titul from "../../assets/titul.png";
 import "./style.css";
+// import quiz from "../../../test";
 function HomePage() {
+  // console.log("console log => ", quiz);
+
   return (
     <Container className="text-white">
       <Box className="flex justify-center items-center text-center py-[15px]">

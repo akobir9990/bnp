@@ -1,6 +1,7 @@
 import { Button, Card } from "@mui/material";
 import { useState } from "react";
 import { questions } from "./quiz.js";
+import "./style.css";
 
 function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -13,9 +14,6 @@ function Quiz() {
     if (isCorrect) {
       setScore(score + 1);
     }
-    // if (isCorrect) {
-    // }
-
     const nextQusetion = currentQuestion + 1;
 
     // if you wanna change questions limit you gotta change "2" dont forget about html too change
@@ -26,10 +24,6 @@ function Quiz() {
       setShowScore(true);
     }
   };
-  // const complate = () => {
-
-  // }
-
   let persent = (score * 100) / limitOfQuestions;
   return (
     <div>

@@ -1,10 +1,8 @@
-.currectAnswer {
+.answerItem.currectAnswer {
   background: #1cbb86;
-  color: white;
 }
-.wrongAnswer {
+.answerItem.wrongAnswer {
   background: #ff0032;
-  color: white;
 }
 
 .disable {
@@ -17,7 +15,6 @@
   margin: 5px 0px;
   border-radius: 10px;
 }
-
 .btns {
   display: flex;
   justify-content: space-between;
