@@ -2,8 +2,10 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/homePage";
 import Author from "../pages/author";
 import About from "../pages/about";
-// import Videos from "../pages/videos";
 import Test from "../pages/tests";
+import Control from "../pages/controlQuest";
+import Tutorial from "../pages/tutorial";
+import ListOfLib from "../pages/usedLib";
 
 import Presentation from "../pages/presentation";
 import PresentationOne from "../pages/presentation/pages/1";
@@ -13,6 +15,16 @@ import PresentationFour from "../pages/presentation/pages/4";
 import PresentationFive from "../pages/presentation/pages/5";
 import PresentationSix from "../pages/presentation/pages/6";
 import PresentationSeven from "../pages/presentation/pages/7";
+
+import ControlOne from "../pages/controlQuest/pages/1";
+import ControlTwo from "../pages/controlQuest/pages/2";
+import ControlThree from "../pages/controlQuest/pages/3";
+import ControlFour from "../pages/controlQuest/pages/4";
+import ControlFive from "../pages/controlQuest/pages/5";
+import ControlSix from "../pages/controlQuest/pages/6";
+import ControlSeven from "../pages/controlQuest/pages/7";
+import ControlEight from "../pages/controlQuest/pages/8";
+import ControlNine from "../pages/controlQuest/pages/9";
 
 import Lecture from "../pages/lecture/index";
 
@@ -41,12 +53,14 @@ import PracticeNine from "../pages/practice/pages/9";
 import {
   ABOUT_PAGE,
   AUTHOR_PAGE,
+  CONTROL_QUESTIONS_PAGE,
   HOME_PAGE,
   LECTURE_PAGE,
+  LIST_OF_LIB_PAGE,
   PRACTICE_PAGE,
   PRESENTATION_PAGE,
   TEST_PAGE,
-  // VIDEOS_PAGE,
+  TUTORIAL_PAGE,
 } from "./const";
 
 function router() {
@@ -57,7 +71,21 @@ function router() {
         <Route path={AUTHOR_PAGE} element={<Author />} />
         <Route path={ABOUT_PAGE} element={<About />} />
         <Route path={TEST_PAGE} element={<Test />} />
-        {/* <Route path={VIDEOS_PAGE} element={<Videos />} /> */}
+        <Route path={TUTORIAL_PAGE} element={<Tutorial />} />
+        <Route path={CONTROL_QUESTIONS_PAGE} element={<Control />} />
+        <Route path={LIST_OF_LIB_PAGE} element={<ListOfLib />} />
+        <Route path={CONTROL_QUESTIONS_PAGE}>
+          <Route path="" element={<Control />} />
+          <Route path="1" element={<ControlOne />} />
+          <Route path="2" element={<ControlTwo />} />
+          <Route path="3" element={<ControlThree />} />
+          <Route path="4" element={<ControlFour />} />
+          <Route path="5" element={<ControlFive />} />
+          <Route path="6" element={<ControlSix />} />
+          <Route path="7" element={<ControlSeven />} />
+          <Route path="8" element={<ControlEight />} />
+          <Route path="9" element={<ControlNine />} />
+        </Route>
         <Route path={PRESENTATION_PAGE}>
           <Route path="" element={<Presentation />} />
           <Route path="1" element={<PresentationOne />} />

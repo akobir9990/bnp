@@ -18,6 +18,7 @@ import fifTeen from "./img/15.jpeg";
 import sixteen from "./img/16.jpeg";
 import seventeen from "./img/17.jpeg";
 import eightteen from "./img/18.jpeg";
+import nineteen from "./img/19.jpeg";
 
 import "./style.css";
 
@@ -48,6 +49,7 @@ function Six() {
     { id: 16, name: sixteen },
     { id: 17, name: seventeen },
     { id: 18, name: eightteen },
+    { id: 19, name: nineteen },
   ];
   return (
     <Container sx={{ width: "100%" }}>

@@ -38,8 +38,6 @@ import thirtyFive from "./img/35.jpeg";
 import thirtySix from "./img/36.jpeg";
 import thirtySeven from "./img/37.jpeg";
 import thirtyEight from "./img/38.jpeg";
-import thirtyNine from "./img/39.jpeg";
-import fourty from "./img/40.jpeg";
 
 import "./style.css";
 
@@ -90,8 +88,6 @@ function One() {
     { id: 36, name: thirtySix },
     { id: 37, name: thirtySeven },
     { id: 38, name: thirtyEight },
-    { id: 39, name: thirtyNine },
-    { id: 40, name: fourty },
   ];
   return (
     <Container sx={{ width: "100%" }}>

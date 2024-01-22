@@ -1,7 +1,9 @@
 export const HOME_PAGE = "/";
 export const TUTORIAL_PAGE = "tutorial";
+export const LIST_OF_LIB_PAGE = "usedlib";
 export const PRESENTATION_PAGE = "presentation";
 export const LECTURE_PAGE = "lecture";
+export const CONTROL_QUESTIONS_PAGE = "control";
 // export const VIDEOS_PAGE = "videos";
 export const ABOUT_PAGE = "about";
 export const AUTHOR_PAGE = "author";

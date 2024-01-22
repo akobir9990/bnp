@@ -29,6 +29,8 @@ import twentySix from "./img/26.jpeg";
 import twentySeven from "./img/27.jpeg";
 import twentyEight from "./img/28.jpeg";
 import twentyNine from "./img/29.jpeg";
+import thirty from "./img/30.jpeg";
+
 import "./style.css";
 
 import { Button, Container, Box } from "@mui/material";
@@ -69,6 +71,7 @@ function One() {
     { id: 27, name: twentySeven },
     { id: 28, name: twentyEight },
     { id: 29, name: twentyNine },
+    { id: 30, name: thirty },
   ];
   return (
     <Container sx={{ width: "100%" }}>
